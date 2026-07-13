@@ -5,9 +5,9 @@
     <title>Anivox Werkgebied</title>
 
     <link rel="stylesheet"
-          href="https://unpkg.com/leaflet/dist/leaflet.css"/>
+      href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/>
 
-    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
 
     <style>
         html, body {
@@ -39,6 +39,8 @@ const lat = 51.137;
 const lng = 5.416;
 
 const map = L.map('map').setView([lat, lng], 10);
+
+console.log("Leaflet geladen");
 
 L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
     attribution:'© OpenStreetMap'
